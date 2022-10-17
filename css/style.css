@@ -15,9 +15,9 @@ body{
 	position: relative;
 	width: 600px;
 	height: 600px;
-	filter: url(#wavy);
+	filter: url(#wavy) ;
 }
-.cicrle:before
+.cicrle::before
 {	content: '';
 	position: absolute;
 	top: 100px;
@@ -31,7 +31,7 @@ body{
 	-webkit-box-reflect:  below 10px linear-gradient(transparent,transparent,#0002);
 	animation: animate 5s linear infinite;
 }
-.cicrle:after
+.cicrle::after
 {
 	content: '';
 	position: absolute;
